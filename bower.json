@@ -1,0 +1,22 @@
+{
+  "name": "parcheggi",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Federico Vitale <fedevitale99@gmail.com> (https://federicovitale.me)"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "^8.0.0",
+    "vue": "^2.5.16"
+  }
+}
