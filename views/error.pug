@@ -1,0 +1,12 @@
+extends layouts/master
+block append styles
+	style.
+		center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+block append content
+	center
+		h1=error.code
+		p=error.message
