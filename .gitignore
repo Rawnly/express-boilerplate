@@ -1,0 +1,7 @@
+node_modules
+
+public/bower
+public/css
+
+.DS_Store
+*.no-git.*
