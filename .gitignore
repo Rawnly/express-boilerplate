@@ -5,3 +5,8 @@ public/css
 
 .DS_Store
 *.no-git.*
+
+Brand.js
+Shoe.js
+
+*.lock
