@@ -1,0 +1,62 @@
+@import 'colors';
+
+%center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+%input {
+	padding: 10px;
+	font-size: 1em;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	transition: all 200ms ease-in-out;
+}
+
+@mixin box($w, $h: $w, $bg: none) {
+	width: $w;
+	height: $h;
+	background: $bg;
+}
+
+@mixin flex($wrap: false, $align: false, $justify: false, $direction: false) {
+	display: flex;
+
+	@if $wrap {
+		flex-wrap: $wrap;
+	}
+
+	@if $align {
+		align-items: $align;
+	}
+	
+	@if $justify {
+		justify-content: $justify;
+	}
+	
+	@if $direction {
+		flex-direction: $direction;
+	}
+}
+
+@mixin absolute($top: false, $right: false, $bottom: false, $left: false, $position: absolute, $translateX: -50%, $translateY: -50%) {
+	transform: translateX($translateX) translateY($translateY);
+	position: $position;
+
+	@if $top {
+		top: $top;
+	}
+
+	@if $right {
+		right: $right;
+	}
+
+	@if $bottom {
+		bottom: $bottom;
+	}
+
+	@if $left {
+		left: $left;
+	}
+}

@@ -1,0 +1,54 @@
+@import 'utility/utils';
+
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+html,
+body {
+	font-size: 18px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+	color: #444;
+	background: #FFF;
+
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+
+	min-height: 100vh;
+
+	padding: 35px;
+}
+
+.navbar {
+	@include flex($justify: flex-start, $align: flex-start, $direction: row);
+	@include absolute($top: 50%, $left: 50%, $position: fixed);
+
+	padding: 0;
+	margin: 0;
+
+	padding: 15px;
+
+	.navbar__item {
+		margin: 0 10px;
+		padding: 10px;
+		text-transform: uppercase;
+		text-align: center;
+		color: inherit;
+		text-decoration: none;
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
